@@ -27,9 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfólio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contactos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Demonstration</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,6 +40,7 @@
                 
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0"><i>Back end </i> e <i>API</i>  de serviços de suporte a múltiplos Sistemas de Gestão de Destinos </h1>
+                <h2> LusiTravel</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -57,7 +58,7 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre o Projeto</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">About the project</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -66,32 +67,21 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead"> Implementação de uma plataforma que suporte os múltiplos serviços e que os forneça a vários Sistemas de Gestão de Destinos na perspetiva do front end. </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"> No fim deveremos ter um protótipo dinâmico com back end e API de serviços e um conjunto de bases de dados seguras</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead"> The principal goal of this project is to implement a fast and easy-to-use platform for associated organizations to provide services for various Destination Management Systems. 
+                    </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">To obtain the expected result, a single front end was built for stakeholders, providing them with a way to register their companies and the services they can provide. These services are mapped and saved according to their geographic data and the type of service.​
+
+                        OGDs that want to take advantage of this platform will have their own front end with information about their region. This front end will be powered by the back end of the platform, through requests made to the API.</p></div>
                 </div>
             </div>
 
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Contexto e problema</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead"> <b>Organização de Gestão de Destinos:</b>Organizações responsáveis pela gestão/promoção dos destinos.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"> <b>Sistemas de Gestão de Destinos:</b>Conjunto de plataformas que reúnem dados sobre um determinado destino através da conjugação entre diferentes agentes de turismo.</p></div>
-                </div>
-            </div>
         </section>
 
            <!-- Portfolio Section-->
            <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfólio do projeto</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -135,66 +125,19 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Se quiser nos contactar: </h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Demonstration Video</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Escreve o teu nome..." data-sb-validations="required" />
-                                <label for="name">Nome Completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">É obrigatório o nome</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email </label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">É obrigatório o Email</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email não é válido.</div>
-                            </div>
-                            
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Escreve a tua mensagem aqui..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Messagem</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">É necessário uma mensagem</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Submissão do formulário bem sucedida!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
+                <video width="320" height="240" controls>
+                     <source src="../assets/Documents/demo.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                </video>
             </div>
         </section>
     
@@ -217,7 +160,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Equipa</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Team</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -250,10 +193,7 @@
                                           </div>
                                       </div>
                                       <br>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                        
                                 </div>
                             </div>
                         </div>
@@ -271,7 +211,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Calendário</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Schedule</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -282,16 +222,13 @@
                                     <img src="assets/img/calendario-tarefas.png" alt="Calendário e tarefas" style="width:100%">
                                     <br>
                                     <br>
-                                    <td class="text-center"><a href="assets/Documents/Calendário.xlsx">Calendário <i class="fa fa-file-excel-o"></i></a></td>
+                                    <td class="text-center"><a href="assets/Documents/Calendário.xlsx">Schedule <i class="fa fa-file-excel-o"></i></a></td>
                                     <!-- Portfolio Modal - Text-->
                                     <br>
                                     <br>
-                                    <p class="mb-4">Aqui pode encontrar o nosso calendário, que será atualizado à medida que avançamos no projeto.</p>
+                                    <p class="mb-4">You can download it!</p>
                                     <br>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -309,7 +246,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-center text-secondary text-uppercase mb-0">Documentos</h2>
+                                    <h2 class="portfolio-modal-title text-center text-secondary text-uppercase mb-0">Documents</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -338,14 +275,13 @@
                                     <h3 class="questions__item-title">
                                         Milestone 3
                                     </h3> 
+                                    <td class="text-center"><a href="assets/Documents/Apresentação-M3.pdf">Apresentação-M3 <i class="fa fa-file-excel-o"></i></a></td>
 
                                     <h3 class="questions__item-title">
                                         Milestone 4
                                     </h3> 
-                                    <br><button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <td class="text-center"><a href="assets/Documents/Apresentação-M4.pdf">Apresentação-M4 <i class="fa fa-file-excel-o"></i></a></td>
+                                
                                 </div>
                             </div>
                         </div>
