@@ -53,10 +53,13 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-sans-serif:
+  "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: var(
+  --bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -236,7 +239,7 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: black;
   text-decoration: underline;
 }
 a:hover {
@@ -300,6 +303,10 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  /* margin-top: 100px; */
+  /* max-width: 75%; */
+  /* height: auto; */
+  /* border-radius: 100px; */
 }
 
 table {
@@ -491,6 +498,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  margin-left: 158px;
 }
 
 .display-1 {
@@ -6738,7 +6746,7 @@ textarea.form-control-lg {
 }
 
 .d-flex {
-  display: flex !important;
+  /* display: flex !important; */
 }
 
 .d-inline-flex {
@@ -11294,7 +11302,8 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
+  background-color: lightblue;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11449,8 +11458,8 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
   }
   .masthead .masthead-heading {
     font-size: 2.0rem;
@@ -11521,4 +11530,56 @@ html {
   content: "";
   clear: both;
   display: table;
+}
+
+.ola{text-align: center;font-size: larger;padding: 20px;}
+
+.deti{
+  top: 15px;
+  /* right: 20px; */
+  width: 174px;
+  border-radius: 29%; /* Define as margens redondas */
+  /* Ajuste o tamanho conforme necessário */
+  display: initial;
+  }
+
+  .aqui{
+    text-align: center;
+    /* margin-top: 20px; */ /* Ajuste o espaçamento conforme necessário */
+    margin-bottom: 30px;
+    font-size: larger;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide a página em duas colunas iguais */
+    gap: 20px; /* Espaçamento entre as colunas */
+  }
+
+  .image1{
+    margin-right: revert;
+    vertical-align: middle;
+    /* margin-top: 64px; */
+    max-width: 41%;
+    height: auto;
+    border-radius: 100px;
+    /* vertical-align: middle; */
+  }
+
+  .oi{
+    font-size: x-large;
+}
+
+.ima{
+  width: 50%;
+  border-radius: 20px;
+  margin-right: unset;
+  margin-left: 200px;
+}
+
+.kkk{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
 }
