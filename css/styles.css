@@ -87,7 +87,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: lightblue;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -127,6 +127,7 @@ h2, .h2 {
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -157,7 +158,7 @@ h6, .h6 {
 }
 
 p {
-  margin-top: 0;
+  /* margin-top: 0; */
   margin-bottom: 1rem;
 }
 
@@ -184,6 +185,7 @@ ul {
 ol,
 ul,
 dl {
+  text-align: initial;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -303,7 +305,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
-  /* margin-top: 100px; */
+  margin-top: 19px;
   /* max-width: 75%; */
   /* height: auto; */
   /* border-radius: 100px; */
@@ -1408,7 +1410,7 @@ progress {
 
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    /* width: 66.66666667%; */
   }
 
   .col-lg-9 {
@@ -5488,13 +5490,14 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   z-index: 1055;
-  display: none;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+  display: none; /* Inicia oculto */
 }
+
 
 .modal-dialog {
   position: relative;
@@ -5565,6 +5568,7 @@ textarea.form-control-lg {
 }
 
 .modal-header {
+  background-color: lightblue;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -5585,9 +5589,13 @@ textarea.form-control-lg {
 }
 
 .modal-body {
+  width: 100%;
+  background-color: lightcyan;
   position: relative;
   flex: 1 1 auto;
+  text-align: center;
   padding: 1rem;
+  /* width: 1px; */
 }
 
 .modal-footer {
@@ -11302,7 +11310,7 @@ html {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 5rem;
   background-color: lightblue;
 }
 .page-section .page-section-heading {
@@ -11311,13 +11319,14 @@ html {
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+    /* margin-top: 10px; */
   }
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  /* margin: 1.25rem 0 1.5rem; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11492,6 +11501,14 @@ html {
   font-size: 1.5rem;
 }
 
+.portfolio-item-caption-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
 .portfolio-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
@@ -11520,8 +11537,9 @@ html {
 }
 
 .column {
+  margin-left: 25px;
   float: left;
-  width: 25%;
+  width: 17%;
   padding: 5px;
 }
 
@@ -11532,7 +11550,25 @@ html {
   display: table;
 }
 
-.ola{text-align: center;font-size: larger;padding: 20px;}
+.ola{
+  margin-right: -98px;
+  font-size: 17px;
+  /* text-align: center; */
+  /* font-size: larger; */
+  padding: 20px;
+  flex: 1; /* Ocupa o espaço restante na largura */
+  /* padding-right: 20px; */ /* Adiciona margem à direita para separar o texto da imagem */
+}
+
+.content {
+  display: flex; /* Define o display flex para alinhar os itens em linha */
+  align-items: center; /* Centraliza verticalmente os itens */
+  /* margin: unset; */
+}
+
+.ima {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima da coluna */
+}
 
 .deti{
   top: 15px;
@@ -11542,6 +11578,16 @@ html {
   /* Ajuste o tamanho conforme necessário */
   display: initial;
   }
+
+  .logo{
+    /* top: 15px; */
+    /* right: 20px; */
+    width: 120px;
+    
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 10px;
+    display: initial;
+    }
 
   .aqui{
     text-align: center;
@@ -11571,15 +11617,260 @@ html {
 }
 
 .ima{
-  width: 50%;
+  width: 400px;
   border-radius: 20px;
   margin-right: unset;
   margin-left: 200px;
 }
 
 .kkk{
-  font-size: 20px;
-  text-align: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  /* transform: rotateY(45deg) translateZ(100px); */ /* Aplica a transformação 3D */
+    /* Adicione outras propriedades de estilo conforme necessário */
+  /* perspective: 1000px; */ /* Define a perspectiva */
+  border: 2px solid #2c3e50; /* Substitua #f00 pela cor desejada */
+  border-radius: 10px;
+  font-size: 15px;
+  /* text-align: center; */
+  /* margin-left: 25px; */
+  /* margin-right: 25px; */
+  line-height: 2;
+  padding: 20px;
 }
+
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.section-content p {
+  line-height: 1.5;
+}
+
+.section-content a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.section-content a i {
+  margin-left: 5px;
+}
+
+.section-content h2 {
+  margin-bottom: 10px;
+}
+
+.section-content ul {
+  padding-left: 20px;
+}
+
+/* Estilos CSS personalizados */
+.custom-portfolio {
+  /* background-color: #f2f2f2; */
+  padding: 40px;
+  text-align: center;
+}
+
+.custom-portfolio-heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.custom-divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-divider-line {
+  width: 30%;
+  height: 1px;
+  background-color: #333;
+}
+
+.custom-divider-icon {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.custom-portfolio-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.custom-portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease;
+}
+
+
+.custom-portfolio-item-caption-content {
+  position: relative;
+  z-index: 2;
+}
+
+.custom-portfolio-item-caption-content:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.custom-portfolio-item-caption-content {
+  margin-top: -36px;
+}
+
+.custom-portfolio-item-caption-content i {
+  color: white;
+}
+
+.custom-portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(200, 230, 200, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.custom-portfolio-item:hover .custom-portfolio-item-caption {
+  opacity: 1;
+}
+
+.custom-portfolio-item-caption h3 {
+  font-weight: bold;
+}
+
+.modal-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-body p {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  background-color: lightblue;
+  justify-content: center;
+}
+
+.tec{
+  width: 144px;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  background-color: lightblue;
+  display: none;
+  text-align: center; /* Centralizar o conteúdo dentro do slide */
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 50%;
+  display: block;
+  margin: 0 auto; /* Centralizar a imagem horizontalmente */
+}
+
+.caption {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos para as setas de navegação */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.prev {
+  left: 232px;
+}
+
+.next {
+  right: 232px;
+}
+
+.arc{
+  width: 100px;
+}
+
+ .conclusion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 168px;
+    margin-right: 168px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .conclusion img {
+    width: 53px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .conco{
+  border: 2px solid #2c3e50;
+  padding: 14px;
+  }
+

@@ -52,3 +52,33 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+var slideIndex = 0;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}
+
+// Adicionar a transição automática
+setInterval(function() {
+  changeSlide(1);
+}, 3000); // Altere o tempo de transição aqui (em milissegundos)
+
+
+
